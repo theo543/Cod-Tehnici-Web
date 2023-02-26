@@ -55,7 +55,7 @@ Repetați testul și pentru adresa de la exercițiul 2. Cum explicați diferenț
 
 #### PREMIUM. Exerciții bonus
 
-10. De ce se numimim homepage-ul homepage?  
+10. De ce se numim homepage-ul homepage?  
 https://thehistoryoftheweb.com/why-do-we-call-it-a-homepage/  
 
 11. Link in BIO? Către ce pagini web avem voie să punem linkuri?  
