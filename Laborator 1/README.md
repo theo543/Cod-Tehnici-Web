@@ -23,7 +23,7 @@ pentru a găsi codul secret format din:
 și rulați pentru URL-ul astfel obținut următoarele trei teste:  
 
    a.  
-https://http.app/test ca să aflați dacă roboții sunt permiși. Ce fel de roboți?  
+https://http.app/?ref=http.dev ca să aflați dacă roboții sunt permiși. Ce fel de roboți?  
 Citiți mai multe despre roboți web aici: https://www.robotstxt.org/  
 
    b.  
