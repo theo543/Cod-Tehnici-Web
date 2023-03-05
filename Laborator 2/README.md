@@ -12,7 +12,7 @@
 
 3. Adăugați conținutul primei părți, 8-bit games:
 
-- Folosiți o listă ordonată pentru topul celor mai populare jocuri. Adăugați o hiperlegătură către pagina mario.html, pe care o veți scrie pentru rezolvarea exercițiilor -.
+- Folosiți o listă ordonată pentru topul celor mai populare jocuri. Adăugați o hiperlegătură către pagina mario.html, pe care o veți scrie pentru rezolvarea exercițiilor 6-9.
 - Folosiți elementul iframe pentru a integra modulul de programare pentru NES. 
 
 4. Adăugați conținutul celei de-a doua părți, 8-bit graphics:
