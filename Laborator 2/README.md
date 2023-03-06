@@ -26,7 +26,7 @@
 
 ## mario.html
 6.  Stabiliți structura generală a fișierului `mario.html`. Hint: folosiți elementele `section` și `article`.
-7. Soundtrackul este disponibil [aici](https://archive.org/details/SuperMarioBros.ThemeMusic). Salvați-l pe calculator și integrați-l folosind elementul audio.
+7. Soundtrackul este disponibil [aici](https://archive.org/details/SuperMarioBros.ThemeMusic). Salvați-l pe calculator și integrați-l folosind elementul `audio`.
 8. Pentru definirea tabelului, folosiți atributele `rowspan` și `colspan` ale elementelor `th` și `td`.
 9. Jucați-vă Super Mario Bros! 
 
