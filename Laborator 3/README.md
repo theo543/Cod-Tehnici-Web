@@ -43,7 +43,8 @@ Adăugați reguli CSS corespunzătoare în fișierul `style.css` și modificați
 8. Adăugați reguli CSS în fișierul `style-mario.css` astfel încât:
 - tot conținutul paginii să fie centrat
 - pagina să pară că face parte din joc: modificați layoutul, stilul titlului, al textului, al headingurilor și al tabelului, astfel încât să semene cu lumea Mario (ex: schimbați fontul, culorile și dimensiunea textului, spațiați elementele din tabel etc.) 
-Hint: "împrumutați" culorile din joc folosind unealta `eyedropper` din browser (dacă există) sau unealta de `inspector`.  
+
+*Hint: "împrumutați" culorile din joc folosind unealta `eyedropper` din browser (dacă există) sau unealta de `inspector`.*  
 
 9. Folosiți [validatorul CSS](https://jigsaw.w3.org/css-validator/) pentru a corecta eventualele erori sau atenționări (aveți grijă la culorile folosite, contrast, dimensiunea corpului de literă). 
 
