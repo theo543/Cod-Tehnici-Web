@@ -17,7 +17,7 @@ Revedeți fișierele `index.html` și `mario.html` pe care le-ați scris în lab
 
 Adăugați reguli CSS corespunzătoare în fișierul `style.css` și modificați, acolo unde este cazul, pagina `index.html` pentru a rezolva următoarele cerințe.
 
-*Pentru rezolvarea exercițiilor, asigurați-vă că folosiți măcar o dată fiecare categorie de selectori CSS (de tip, prin id, prin clasă, prin atribute), combinări de selectori și marcajul`!important`.*
+*Pentru rezolvarea exercițiilor, asigurați-vă că folosiți măcar o dată fiecare categorie de selectori CSS (de tip, prin id, prin clasă, prin atribute), combinări de selectori și marcajul`!important`. Folosiți unități relative pentru valorile proprietăților legate de dimensiune.* 
 
 3.  Folosiți modelul BOX și proprietățile CSS `padding`, `border`, `margin`, `height`, `width` pentru a crea layoutul general al paginii. `Headerul`, `footerul` și corpul `main` ar trebui să fie evidențiate în împărțirea în pagină. 
 *Folosiți fiecare din proprietățile CSS amintite mai sus măcar o dată.*
