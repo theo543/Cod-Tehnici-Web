@@ -2,11 +2,20 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    overflow: auto; /* fix margins escaping */
 }
 
 p {
-    margin-bottom: 0.5em;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+
+main, header, footer {
+    padding: 0.5em;
 }
 
 html, body {
@@ -23,7 +32,6 @@ nav {
     display: inline-block;
     width: auto;
     padding: 0.10em;
-    margin: 0.20em;
     border: 1px solid black;
 }
 
