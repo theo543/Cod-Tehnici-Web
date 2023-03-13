@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: auto; /* fix margins escaping */
+}
+
+p {
+    margin-bottom: 0.5em;
+}
+
+html, body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100% !important;
+}
+
+nav {
+    display: inline-block;
+    width: auto;
+    padding: 0.10em;
+    margin: 0.20em;
+    border: 1px solid black;
+}
+
+header {
+    background: rgb(134,210,247);
+    background: linear-gradient(90deg, rgba(134,210,247,0.5970763305322129) 25%, rgba(9,9,121,0.6026785714285714) 75%, rgba(0,212,255,0.6026785714285714) 100%);
+}
+
+header a {
+    font-weight: bold;
+    color: gray;
+}
+
+main {
+    position: relative;
+    border: 1px solid black;
+    /* this code used to generate gradient png
+    background:
+    linear-gradient(90deg, blue, 33%, lightblue 33%, 66%, darkblue 66%),
+    linear-gradient(90deg, lightblue, 33%, darkblue 33%, 66%, blue 66%);
+    background-size: 9em 3em, 9em 3em;
+    background-position: 0 0, 0 3em;
+    background-repeat: repeat-x, repeat-x;
+    height: 6em;
+    width: 9em;
+    */
+    height: 100%;
+    width: 100%;
+}
+
+main::after {
+    filter: hue-rotate(45deg);
+    background-image: url("/resources/gradient.png");
+    background-repeat: repeat;
+    background-size: 12em 8em;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: "";
+    z-index: -1;
+    opacity: 0.33;
+}
+
+footer {
+    background-color: gray;
+}
