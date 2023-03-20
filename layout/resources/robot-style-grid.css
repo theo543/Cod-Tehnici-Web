@@ -28,7 +28,7 @@ body {
   border: 3px solid black;
   border-radius: 200px;
   position: relative;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
   /* justify-content: ?;
@@ -42,9 +42,19 @@ body {
   border-radius: 200px;
   background: black;
   overflow: hidden;
-  display: flex;
+  display: grid;
   /* justify-content: ?; */
   justify-content: center;
+  grid-template-columns: 1fr auto auto 1fr;
+  grid-template-areas: ". eye1 eye2 .";
+}
+
+.robot_eye:first-child {
+  grid-area: eye1;
+}
+
+.robot_eye:last-child {
+  grid-area: eye2;
 }
 
 .robot_eye {
@@ -55,7 +65,7 @@ body {
   border-radius: 100%;
   margin: -10px 10px 0px 10px;
   position: relative;
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: center;
   /* justify-content: ?; */
@@ -76,14 +86,12 @@ body {
   border-radius: 50px;
   border: 4px solid black;
   position: relative;
-  display: flex;
+  display: grid;
   align-items: center;
-  /* flex-wrap: ?;
-  overflow: ?;
-  justify-content: ?; */
-  flex-wrap: wrap;
   overflow: hidden;
   justify-content: center;
+  align-content: center;
+  grid-template: 1fr 1fr / repeat(8, 1fr);
 }
 
 .robot_tooth {
@@ -95,9 +103,21 @@ body {
 }
 
 .robot_tooth:nth-child(4) {
-  margin-right: 2px;
+  position: relative;
+  right: 2px;
 }
 
 .robot_tooth:nth-child(5) {
-  margin-left: 2px;
+  position: relative;
+  left: 2px;
+}
+
+.robot_tooth:nth-child(9) {
+  position: relative;
+  left: 1px;
+}
+
+.robot_tooth:nth-child(16) {
+  position: relative;
+  right: 2px;
 }
