@@ -7,15 +7,18 @@ body {
   display: flex;
   min-height: 100vh;
   margin: 0;
+  flex-direction: column;
   /* flex-direction: ?; */
 }
 
 main {
   display: flex;
+  flex: 1;
   /* flex: ?; */
 }
 
 main > article {
+  flex: 1;
   /* flex: ?; */
 }
 
@@ -26,11 +29,12 @@ main > aside {
 }
 
 main > nav {
+  order: initial;
   /* order: ?; */
 }
 
 header, footer {
- /* height: ?; */
+ height: calc(14.2vh - 2em);
 }
 
 header {
