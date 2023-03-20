@@ -1,0 +1,63 @@
+/* 
+Înlocuiți simbolurile ? cu valori potrivite pentru 
+a completa regulile CSS de mai jos.
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, nav, article, aside {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+main > nav, 
+main > aside {
+  background: #FAF4B7;
+}
+
+header {
+  background: #CDF0EA;
+}
+
+article {
+  background: #F9F9F9;
+}
+
+footer {
+  background: #F6C6EA;
+}
+
+header, footer, article, nav, aside {
+  padding: 1em;
+  overflow: auto; /* stop paddings escaping into parent */
+}
+
+header, footer {
+  height: 14.2%;
+}
+
+main {
+  height: 71.6%;
+}
+
+nav, aside {
+  width: 16.66666%;
+}
+
+nav {
+  float: left;
+}
+
+article {
+  width: 66.66666%;
+  display: inline-block;
+}
+
+aside {
+  float: right;
+}
