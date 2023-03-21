@@ -18,7 +18,7 @@ Descărcați fișierele `layout.html` și `layout-style.css` din directorul `res
 
 4. Completați regulile CSS din fișierul `layout-style-flex.css`, înlocuind simbolul `?` cu valori corespunzătoare, astfel încât pagina să arate la fel ca mai sus. Care dintre metodele flexbox și grid v-a părut mai potrivită pentru realizarea acestui layout? 
 
-5. Creați un fișier CSS nou `layout-style-position.css`. Adăugați reguli CSS ce nu folosesc metodele flexbox sau grid, ci doar proprietăți precum `position`, `float`, `clear` etc., pentru a recrea layoutul din exercițiile 4 și 5. 
+5. Creați un fișier CSS nou `layout-style-position.css`. Adăugați reguli CSS ce nu folosesc metodele flexbox sau grid, ci doar proprietăți precum `position`, `float`, `clear` etc., pentru a recrea layoutul din exercițiile 3 și 4. 
 
 6. Folosiți [validatorul CSS](https://jigsaw.w3.org/css-validator/) pentru a corecta eventualele erori sau atenționări pentru fiecare din fișierele CSS cu care ați lucrat la exercițiile de mai sus. 
 
