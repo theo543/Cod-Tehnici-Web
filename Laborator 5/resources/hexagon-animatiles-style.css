@@ -27,7 +27,7 @@ a completa regulile CSS de mai jos.
   transition: 2s;
 }
 
-.container div:hover {
+.container div:hover, .animation-on {
   transition: 0s;
   background: #fff00f;
   animation: animatiles ease-in-out 2s 1;
