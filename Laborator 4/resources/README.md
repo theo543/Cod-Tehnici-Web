@@ -14,7 +14,7 @@ Descărcați fișierele `layout.html` și `layout-style.css` din directorul `res
 
 3. Completați regulile CSS din fișierul `layout-style.css`, înlocuind simbolul `?` cu valori corespunzătoare, astfel încât pagina să arate ca în imaginea de mai jos:
 
-![layout pagină](resources/images/layout.png)
+![layout pagină](images/layout.png)
 
 4. Completați regulile CSS din fișierul `layout-style-flex.css`, înlocuind simbolul `?` cu valori corespunzătoare, astfel încât pagina să arate la fel ca mai sus. Care dintre metodele flexbox și grid v-a părut mai potrivită pentru realizarea acestui layout? 
 
@@ -28,16 +28,16 @@ Descărcați fișierele `robot.html` și `robot-style.css` din directorul `resou
 
 7. Completați regulile CSS din fișierul `robot-style.css`, înlocuind simbolul `?` cu valori corespunzătoare, astfel încât robotul să arate ca în imaginea de mai jos:
 
-![robot asamblat](resources/images/robot.png)
+![robot asamblat](images/robot.png)
 
 *Hint:
 Robotul este construit din figuri geometrice simple. Citiți cu atenție codul ce v-a fost furnizat pentru a înțelege cum se suprapun aceste figuri. Imaginea de mai jos evidențiază figurile folosite pentru a construi ochii robotului.*
 
-![ochi robot deconstruiți](resources/images/robot-eyes.png)
+![ochi robot deconstruiți](images/robot-eyes.png)
 
 8. Modificați fișierele `robot.html` și `robot-style.css` pentru a-i adăuga o [strungăreață](https://www.nowness.com/story/willem-dafoe-grigoriy-dobrygin-mind-the-gap) robotului, ca în imaginea de mai jos. 
 
-![robot cu strungăreață](resources/images/robot-gap.png)
+![robot cu strungăreață](images/robot-gap.png)
 
 *Hint: puteți adăuga elemente noi în fișierul html.*
 
