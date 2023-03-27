@@ -14,7 +14,7 @@ a completa regulile CSS de mai jos.
   margin: var(--m);
   height: calc(var(--s)*1.1547); /* h=s/cos(30) */
   background: black;
-  /* clip-path: polygon(0% ?%, 0% ?%, 50% ?%, 100% ?%, 100% ?%, 50% 0%); */
+  clip-path:  polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 
  
