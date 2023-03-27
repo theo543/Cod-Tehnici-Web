@@ -13,9 +13,9 @@ a completa regulile CSS de mai jos.
 html {
   height: 100%;
   display: flex;
-  /* align-items: ?;
-  justify-content: ?;
-  background: ?; */
+  align-items: center;
+  justify-content: center;
+  background: var(--color-black);
 }
 
 .cat {
@@ -29,27 +29,27 @@ html {
   top: -30%;
   height: 60%;
   width: 25%;
-  /* background: ?; */
+  background: var(--color-white);
 }
 	
 .ear-left {
   left: -7%;
-  border-radius: 70% 30% 0% 0% / 100% 100% 0% 0%;
-  /* transform: rotate(?); */
+  border-radius: 70% 30% 0 0 / 100% 100% 0 0;
+  transform: rotate(-20deg)
 }
 	
 .ear-right {
   right: -7%;
-  border-radius: 30% 70% 0% 0% / 100% 100% 0% 0%;
-  /* transform: rotate(?); */
+  border-radius: 30% 70% 0 0 / 100% 100% 0 0;
+  transform: rotate(20deg);
 }
 	
 .face {
   position: absolute;
   height: 100%;
   width: 100%;
-  /* background-color: ?;
-  border-radius: ?; */
+  background-color: var(--color-black);
+  border-radius: 100%;
 }
 
 .eye {
@@ -71,7 +71,7 @@ html {
   width: 100%;
   border-radius: 0 0 50% 50% / 0 0 40% 40%;
   background: var(--color-black);
-  /* animation: blink ? ? ?; */
+  animation: blink ease-in 4s infinite;
 }
 
 /* blink twice if you love cats */	
@@ -91,8 +91,8 @@ html {
   top: 60%;
   height: 10%;
   width: 15%;
-  /*background: ?;
-  border-radius: ?;*/
+  background: var(--color-white);
+  border-radius: 50%;
 }
 
 .eye-left {
@@ -119,7 +119,7 @@ html {
   width: 20%;
   background: var(--color-black);
   border-radius: 50%;
-  /* animation: look-around ? ?; */
+  animation: look-around 4s infinite;
 }
 
 .eye-left .eye-pupil {
@@ -129,7 +129,7 @@ html {
   left: 30%;
 }
 	
-/*@keyframes ? {
+@keyframes look-around {
   0% { transform: translate(0); }
   5% { transform: translate(50%, -25%); }
   10% { transform: translate(50%, -25%); }
@@ -137,7 +137,7 @@ html {
   20% { transform: translate(-100%, -25%); }
   25% { transform: translate(0, 0); }
   100% { transform: translate(0, 0); }
-} */
+}
 
 		
 /* lumină din pupilă */
@@ -148,8 +148,8 @@ html {
   right: -5%;
   height: 20%;
   width: 35%;
-  /* border-radius: ?;
-  background: ?; */
+  border-radius: 50%;
+  background: var(--color-white);
 }
 
 /* năsuc */
@@ -159,7 +159,7 @@ html {
   left: 50%;
   height: 6%;
   width: 10%;
-  /* background: ?;
-  transform: ?; */
+  background: pink;
+  transform: translateX(-50%);
   border-radius: 50% 50% 50% 50% / 30% 30% 70% 70%;
 }
