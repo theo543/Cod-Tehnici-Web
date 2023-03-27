@@ -13,7 +13,7 @@ body {
   height: 100vh;
   width: 100vw;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   /* justify-content: ?;
@@ -53,7 +53,7 @@ body {
   width: 145px;
   background-color: #fefbb8;
   border-radius: 100%;
-  margin: -10px 10px 0px 10px;
+  margin: -10px 10px 0 10px;
   position: relative;
   display: flex;
   align-items: center;
