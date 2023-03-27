@@ -4,7 +4,7 @@ a completa regulile CSS de mai jos.
 */
 
 .main {
-  /* display: ?; /*
+  /* display: ?; */
   --s: 100px;  /* size */
   --m: 4px;    /* margin */
   --f: calc(1.732 * var(--s) + 4 * var(--m) - 1px); 
@@ -13,8 +13,10 @@ a completa regulile CSS de mai jos.
 }
 
 .container {
-  font-size: 0; 
-  /* înlăturăm spațiul dintre 
+  font-size: 0;
+  display: flex;
+  flex-flow: row wrap;
+  /* înlăturăm spațiul dintre
      elemente inline-block */
 }
 
@@ -25,16 +27,16 @@ a completa regulile CSS de mai jos.
   background: black;
   clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%); 
   
-  /* display: ?; */
+  display: inline;
   margin-bottom: calc(var(--m) - var(--s)*0.2885); /* offset -25% pe verticală 
   						   pentru aliniere exactă */
   font-size: initial; /* revenim la dimensiunea default */
 }
 
 /* alternăm culorile hexagoanelor */
-/*.container div:? {
+.container div:nth-child(2n + 1) {
   background: #fff00f;
-} */
+}
 
 /* decalăm hexagoanele la dreapta folosind 
    proprietatea shape-outside ce determină o 
@@ -45,7 +47,7 @@ a completa regulile CSS de mai jos.
 .container::before {
   content: "";
   width: calc(var(--s)/2 + var(--m));
-  /* float: ?; */
+  float: left;
   height: 120%;
   shape-outside: repeating-linear-gradient(     
                    #0000 0 calc(var(--f) - 3px),      
