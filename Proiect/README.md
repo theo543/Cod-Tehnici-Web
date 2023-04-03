@@ -46,4 +46,22 @@ CSS:
 - site-ul trebuie să conțină o tranziție care implică schimbarea mai multor proprietăți la intervale diferite de timp
 - site-ul trebuie să conțină o animație care să modifice mai multe proprietăți ale aceluiași element  
 
+### Cerințe generale minimale pentru partea 2 (JavaScript + misc):
+- fișier separat pentru codul JavaScript
+- modificarea stilului unui element sau al unui grup de elemente
+- manipularea DOM-ului (selectare după id, tag, clasă, folosind selectori CSS)
+- crearea și stergerea de elemente HTML
+- folosirea și modificarea evenimentelor generate de mouse si tastatură
+- modificare de proprietăți
+- inputuri funcționale (de exemplu: input de tip text/range/number/radio/checkbox, select, textarea)
+- folosirea setTimeout sau setInterval
+- folosirea localStorage (să se pastreze în localStorage o colecție de elemente)
+- folosirea a cel puțin unei metode din clasele: Math, Array, String, Date
+- schimbarea aleatoare a valorilor unor proprietăți (de exemplu: culoare, dimensiuni, poziție)
+- folosirea proprietăților classList, target sau currentTarget
+- folosirea metodelor getComputedStyle și stopPropagation
+- validarea datelor dintr-un formular folosind expresii regulate
+
+Pe lângă implementarea acestor cerințe minimale (a căror rezolvare corectă nu garantează punctajul maxim), includeți în proiect și tratarea altor probleme (la alegere) precum cea a accesibilității, internaționalizării (traducere, caractere speciale etc.), folosirii canvas/svg etc.  
+
 *Cerințele pot fi modificate și/sau completate de fiecare profesor de laborator.*
