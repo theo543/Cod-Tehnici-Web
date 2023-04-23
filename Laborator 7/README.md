@@ -15,7 +15,7 @@ Completați funcția `drawTable` pentru a genera un tabel (element `html` de tip
 
 2. Scrieți o funcție `colorCol` și una `colorRow` care să coloreze o coloană, respectiv o linie din tabla de desenat cu o culoare dată.
 
-3. Folosiți funcțiile de mai sus pentru a completa definiția funcției `rainbow` care desenează un curcubeu (pe verticală sau orizontală, conform argumentului `target`) precum în imaginile de mai jos. 
+3. Folosiți funcțiile de mai sus pentru a completa definiția funcției `rainbow` care desenează un curcubeu (pe orizontală sau verticală, conform argumentului `target`) precum în imaginile de mai jos. 
 
 ![](resources/images/rbw.png)  
 
@@ -28,12 +28,13 @@ Completați funcția `drawTable` pentru a genera un tabel (element `html` de tip
 
 7. Definiția funcția `drawRect` pentru a desena un dreptunghi cu o culoare dată folosind funcția `drawLine`. 
 
-8. Extindeți funcția `drawPixel`: dacă celula de la linia și coloana date ca argument nu există, redimensionați tabla de desenat în mod corespunzător.
+8. Extindeți funcția `drawPixel`: dacă celula de la linia și coloana date ca argument nu există, redimensionați mai întâi tabla de desenat în mod corespunzător, adăugând linii și/sau coloane.
 
 9. Extindeți funcția `drawPixel` pentru a permite specificarea ponderii cu care o celulă va fi colorată cu o culoare dată: 
 - dacă ponderea este 1, atunci celula va fi colorată folosind culoarea primită ca argument
 - dacă ponderea este 0, atunci celula își va păstra culoarea inițială
-- pentru orice altă valoare a ponderii, culoarea inițială și cea nouă vor fi amestecate.  
+- pentru orice altă valoare a ponderii, culoarea inițială și cea nouă vor fi amestecate. De exemplu, dacă ponderea este 0.5, atunci 
+   culoarea inițială și cea nouă vor fi amestecate în proporții egale (50%).
 *Hint: folosiți culori de forma `rgb(x,x,x)` pentru a simplifica codul.*
 
 10. Definiți funcțiile `delRow` și `delCol` ce permit ștergerea unei linii și a unei coloane din tabla de desenat.  
@@ -47,13 +48,13 @@ Completați funcția `drawTable` pentru a genera un tabel (element `html` de tip
 12. Definiți funcția `jumble` pentru a aplica o permutare circulară
    cu un număr aleator de poziții fiecărei linii din tabla de desenat.
 
-13. *(Opțional) Scrieți o funcție `transpose` care transformă tabla de desenat în transpusa ei.*
+13. *(Opțional) Scrieți o funcție `transpose` care transformă tabla de desenat în transpusa ei. Hint: dacă ați adăugat clase corespunzătoare poziției fiecărei celule din tabel, nu uitați să actualizați clasele.*
 
 14. Scrieți o funcție `flip` care inversează ordinea copiilor unui obiect DOM. Folosiți funcția pentru a face *flip* tablei de desenat pe orizontală și pe verticală.
 
-15. Definiți funcția `mirror` care oglindește pe orizontală tabla de desenat: ia jumătatea stângă a tablei, îi face flip și o copiază în partea dreaptă a tablei.
-
 ## EXTRA
+
+15. Definiți funcția `mirror` care oglindește pe orizontală tabla de desenat: ia jumătatea stângă a tablei, îi face flip și o copiază în partea dreaptă a tablei.
 
 16. Definiți funcția `smear` ce întinde culoarea unei celule în celulele învecinate la dreapta conform unei ponderi date ca argument. Ponderea cu care se colorează celulele învecinate se înjumătățește cu fiecare poziție.  
 *Hint: folosiți funcția `drawPixelAmount`.*

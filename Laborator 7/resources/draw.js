@@ -26,7 +26,7 @@ function rainbow(target) {
 
 function getNthChild(element, n) {
 /*
-   4. Întorceți la n-lea element copil al unui element dat ca argument.
+   4. Întoarceți al n-lea element copil al unui element dat ca argument.
 */
 };
 
@@ -40,7 +40,9 @@ function drawLine(r1, c1, r2, c2, color) {
 /*
    6. Desenați o linie (orizontală sau verticală) de la celula aflată 
    pe linia 'r1', coloana 'c1' la celula de pe linia 'r2', coloana 'c2'
-   folosind culoarea 'color'.
+   folosind culoarea 'color'. 
+   Hint: verificați mai întâi că punctele (r1, c1) și (r2, c2) definesc
+   într-adevăr o linie paralelă cu una dintre axe.
 */
 }
 
@@ -73,8 +75,21 @@ function drawPixelAmount(row, col, color, amount) {
    1, atunci celula va fi colorată cu 'color'
    0, atunci celula își va păstra culoarea inițială
    pentru orice altă valoare, culoarea inițială și cea dată de argumentul 
-   'color' vor fi amestecate. 
-   Hint: folosiți funcția colorMixer de mai sus.
+   'color' vor fi amestecate. De exemplu, dacă ponderea este 0.5, atunci 
+   culoarea inițială și cea nouă vor fi amestecate în proporții egale (50%). 
+   */
+
+   /*   
+   Hint 1: folosiți funcția colorMixer de mai sus.
+
+   Hint 2: pentru un argument 'color' de forma 'rgb(x,y,z)' puteți folosi
+   let newColorArray = color.match(/\d+/g); 
+   pentru a obține un Array cu trei elemente, corespunzătoare valorilor
+   asociate celor trei culori - newColorArray = [x, y, z]
+   
+   Hint 3: pentru a afla culoarea de fundal a unui element puteți folosi
+   metoda getComputedStyle(element). Accesând proprietatea backgroundColor 
+   a obiectului întors, veți obține un string de forma 'rgb(x,y,z)'.
    */
 }
 
