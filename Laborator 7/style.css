@@ -3,4 +3,5 @@ td {
     width: 12px;
     height: 12px;
     background-color: whitesmoke;
+    transition: background-color 0.5s;
 }
