@@ -48,11 +48,12 @@ Completați funcția `drawTable` pentru a genera un tabel (element `html` de tip
 12. Definiți funcția `jumble` pentru a aplica o permutare circulară
    cu un număr aleator de poziții fiecărei linii din tabla de desenat.
 
-13. *(Opțional) Scrieți o funcție `transpose` care transformă tabla de desenat în transpusa ei. Hint: dacă ați adăugat clase corespunzătoare poziției fiecărei celule din tabel, nu uitați să actualizați clasele.*
+## EXTRA
+
+13. Scrieți o funcție `transpose` care transformă tabla de desenat în transpusa ei. Hint: dacă ați adăugat clase corespunzătoare poziției fiecărei celule din tabel, nu uitați să actualizați clasele.
 
 14. Scrieți o funcție `flip` care inversează ordinea copiilor unui obiect DOM. Folosiți funcția pentru a face *flip* tablei de desenat pe orizontală și pe verticală.
 
-## EXTRA
 
 15. Definiți funcția `mirror` care oglindește pe orizontală tabla de desenat: ia jumătatea stângă a tablei, îi face flip și o copiază în partea dreaptă a tablei.
 
