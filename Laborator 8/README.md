@@ -39,8 +39,8 @@ Descărcați fișierele `camera.html`, `style.css` și `camera.js` din directoru
   
 (opțional) Controlați scalarea și folosind mouse-ul, prin scroll.
 
-7. Să facem poze! Scrieți o funcție handler pentru evenimente generate de apăsarea tastelor pentru a *face o poză* la apăsarea tastei 's'. Adăugați o animație ori redați un sunet pentru a semnala capturarea imaginii vizibile prin vizor. Întoarceți, de asemenea, un obiect, copie a elementului div `vizor` de la momentul capturării.  
-*Hint: pentru animație, puteți folosi proprietatea CSS `clip`.*
+7. Să facem poze! Scrieți o funcție handler pentru evenimente generate de apăsarea tastelor pentru a *face o poză* la apăsarea tastei 's'. Adăugați o animație ori redați un sunet pentru a semnala capturarea imaginii vizibile prin vizor. Întoarceți, de asemenea, un obiect, copie a elementului div `container` de la momentul capturării.  
+*Hint: pentru animație, puteți folosi proprietatea CSS `clip`. Atenție la copierea obiectului: faceți o clonă, nu copie prin referință. Nu uitați de id-ul elementului.*
 
 8. Adăugați în pagina `camera.html` o galerie în care să afișați ultimele imagini capturate. Adăugați galeria sub vizorul camerei.
 
