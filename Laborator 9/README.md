@@ -59,7 +59,7 @@ Lista de opțiuni pentru câmpul corespunzător rasei este lungă (20 de opțiun
 
 7. Modificați stilul CSS al formularului. Aliniați elementele, spațiați-le mai bine etc. 
 
-8. Revedeți [lista de criterii]('https://alistapart.com/article/sensibleforms/') de urmat pentru crearea de formulare. Cât de bine structurat este formularul? Au fost folosite mereu cele mai potrivite elemente HTML? Cum ați împărți formularul altfel pentru a nu avea o listă prea lungă de câmpuri de completat pe pagină?
+8. Revedeți [lista de criterii]('https://alistapart.com/article/sensibleforms/') de urmat pentru crearea de formulare. Cât de bine structurat este formularul? Au fost folosite mereu cele mai potrivite elemente HTML? Cum ați împărți formularul altfel pentru a nu avea o listă prea lungă de câmpuri de completat pe o singură pagină?
 
 
 
