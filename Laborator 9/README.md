@@ -2,13 +2,13 @@
 
 *Folosiți notele de curs ca să vă amintiți conceptele de bază ale definirii formularelor din [cursul 9](https://cs.unibuc.ro/~cechirita/tw/c9) și rezolvați următoarele exerciții.*  
 
-## [space is the place!]('https://www.youtube.com/watch?v=vHLOPBx2BaE')
+## [space is the place!](https://www.youtube.com/watch?v=vHLOPBx2BaE)
 
 Descărcați fișierele `form.html`, `style.css` și `form.js` din directorul `resources`. Sarcina voastră principală este să modificați fișierele HTML și JavaScript pentru a crea un formular pentru cererea de intrare în Sistemul Solar a vietăților extraterestre. Folosiți imaginea `screenshot.png` din directorul `resources` pentru a vă ghida în scrierea formularului. 
 
 1. Adăugați atribute corespunzătoare elementului html `form`: formularul trebuie să folosească metoda `post` pentru comunicarea cu serverul, URL-ul să fie 'Earth', iar încărcarea răspunsului să fie în aceeași fereastră. 
 
-## [multipass]('https://www.youtube.com/watch?v=NVPLqbWXdDA')
+## [multipass](https://www.youtube.com/watch?v=NVPLqbWXdDA)
 
 2. Adăugați formularului o secțiune care să corespundă datelor personale ale vizitatorului extraterestru.  
 Adăugați câte un câmp pentru: 
@@ -17,7 +17,7 @@ Adăugați câte un câmp pentru:
 - data nașterii (data cea mai recentă 7 mai 2023, cea mai veche 1 ianuarie 1800; câmp obligatoriu), 
 - creditul social acumulat (interval între 0 și 2000 de puncte de credit; pasul să fie de 50 de credite; nu uitați să adăugați o etichetă cu valoarea selectată; câmp obligatoriu), 
 - o fotografie (să fie acceptată orice extensie de fișier imagine), și
-- rasă. Rasa poate fi una din următoarele: [Autobot]('https://en.wikipedia.org/wiki/Autobot'), [Daimons]('https://en.wikipedia.org/wiki/Death_Busters#Daimons'), [Deep Ones]('https://en.wikipedia.org/wiki/Deep_One'), [Experiment]('https://en.wikipedia.org/wiki/List_of_Lilo_%26_Stitch_characters#Experiments'), [Goa'uld]('https://en.wikipedia.org/wiki/Mythology_of_Stargate#Goa'uld'), [Hutt]('https://en.wikipedia.org/wiki/Hutt_(Star_Wars)'), [Jawa]('https://en.wikipedia.org/wiki/List_of_Star_Wars_species_(F%E2%80%93J)#Jawa'), [Kryptonian]('https://en.wikipedia.org/wiki/Krypton_(comics)'), [Mandalorians]('https://en.wikipedia.org/wiki/Mandalorians'), [Martian]('https://en.wikipedia.org/wiki/Mars_in_fiction#Life_on_Mars'), [Protoss]('https://en.wikipedia.org/wiki/StarCraft#Story'), [Rodian]('https://en.wikipedia.org/wiki/List_of_Star_Wars_species_(P%E2%80%93T)#Rodian'), [Romulan]('https://en.wikipedia.org/wiki/Romulan'), [Tleilaxu]('https://en.wikipedia.org/wiki/Bene_Tleilax'), [Vogon]('https://en.wikipedia.org/wiki/Vogon'), [Wookie]('https://en.wikipedia.org/wiki/Wookiee'), [Xenu]('https://en.wikipedia.org/wiki/Xenu'), [Yeti]('https://en.wikipedia.org/wiki/Yeti_(Doctor_Who)'), [Zerg]('https://en.wikipedia.org/wiki/StarCraft#Story').  
+- rasă. Rasa poate fi una din următoarele: [Autobot](https://en.wikipedia.org/wiki/Autobot), [Daimons](https://en.wikipedia.org/wiki/Death_Busters#Daimons), [Deep Ones](https://en.wikipedia.org/wiki/Deep_One), [Experiment](https://en.wikipedia.org/wiki/List_of_Lilo_%26_Stitch_characters#Experiments), [Goa'uld](https://en.wikipedia.org/wiki/Mythology_of_Stargate#Goa'uld), [Hutt](https://en.wikipedia.org/wiki/Hutt_(Star_Wars)), [Jawa](https://en.wikipedia.org/wiki/List_of_Star_Wars_species_(F%E2%80%93J)#Jawa), [Kryptonian](https://en.wikipedia.org/wiki/Krypton_(comics)), [Mandalorians](https://en.wikipedia.org/wiki/Mandalorians), [Martian](https://en.wikipedia.org/wiki/Mars_in_fiction#Life_on_Mars), [Protoss](https://en.wikipedia.org/wiki/StarCraft#Story), [Rodian](https://en.wikipedia.org/wiki/List_of_Star_Wars_species_(P%E2%80%93T)#Rodian), [Romulan](https://en.wikipedia.org/wiki/Romulan), [Tleilaxu](https://en.wikipedia.org/wiki/Bene_Tleilax'), [Vogon](https://en.wikipedia.org/wiki/Vogon), [Wookie](https://en.wikipedia.org/wiki/Wookiee), [Xenu](https://en.wikipedia.org/wiki/Xenu), [Yeti](https://en.wikipedia.org/wiki/Yeti_(Doctor_Who)), [Zerg](https://en.wikipedia.org/wiki/StarCraft#Story).  
 *GEEK-OH!-METRU: Câte din tipurile de viață extraterestră de mai sus recunoașteți?*
 
 Lista de opțiuni pentru câmpul corespunzător rasei este lungă (20 de opțiuni). Ce fel de element(e) html ar fi mai potrivit să folosim? Vă puteți gândi la o structurare mai bună a datelor? Propuneți o soluție alternativă de prezentare.
@@ -42,7 +42,7 @@ Lista de opțiuni pentru câmpul corespunzător rasei este lungă (20 de opțiun
 - număr de ochi (câmp obligatoriu)
 - culoare (hint: folosiți elementul html pentru selecția de culoare. Culoarea va fi ținută minte de la o vizită la alta a paginii; folosiți `localStorage`. De asemenea, la alegerea unei culori, culoarea de background a paginii se va modifica conform selecției)
 
-## [just visiting]('https://www.youtube.com/watch?v=KWMSpxTrfbo')
+## [just visiting](https://www.youtube.com/watch?v=KWMSpxTrfbo)
 
 5. Adăugați formularului o secțiune pentru înregistrarea detaliilor legate de vizită:
 - data sosirii (interval de 10 ani începând cu 7 mai 2023; câmp obligatoriu)
@@ -51,7 +51,7 @@ Lista de opțiuni pentru câmpul corespunzător rasei este lungă (20 de opțiun
 - scopul vizitei (pot fi alese mai multe opțiuni; valoarea `invazie` preselectată; câmp obligatoriu)
 - alte detalii legate de vizită.
 
-## [the button]('https://www.youtube.com/watch?v=Y0ZuNg17ZdU')
+## [the button](https://www.youtube.com/watch?v=Y0ZuNg17ZdU)
 
 6. Adăugați un buton de trimitere a formularului. La apăsarea butonului se vor apela verificările adiționale (scrise în JavaScript) pentru conținutul câmpurilor. Dacă toate câmpurile sunt validate, înlocuiți formularul cu un mesaj care să anunțe trimiterea datelor. Go wild! (adăugați o imagine sau animație etc.)
 
