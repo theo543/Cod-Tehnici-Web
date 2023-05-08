@@ -6,6 +6,30 @@ let im_x = 0, im_y = 0, im_s = 1;
 let dx = 10;
 let dy = 10;
 let ds = 0.001;
+function start_timer(time_len, time_cb) {
+    let time_span_parent = document.getElementById("time");
+    let time_span = document.createElement("span");
+    time_span_parent.appendChild(time_span);
+    let timer_start = (new Date()).getTime();
+    function update_timer() {
+        let c = (new Date()).getTime();
+        if (c - timer_start > time_len) {
+            if (time_cb()) {
+                timer_start = (new Date()).getTime();
+                update_timer();
+                return;
+            }
+            time_span.innerText = "";
+            timer_start = null;
+            time_cb = () => {
+            };
+        } else {
+            time_span.innerText = time_len - (c - timer_start);
+            requestAnimationFrame(update_timer);
+        }
+    }
+    update_timer();
+}
 function updateMargin(elem, marginx, marginy) {
     elem.style.marginLeft = marginx  + "px";
     elem.style.marginTop = marginy  + "px";
@@ -20,26 +44,19 @@ function updateImage() {
     updateScale(image, im_s);
     console.log(im_x, im_y, im_s);
 }
-function snapshot() {
-    let copy = vizor.cloneNode(true);
-    return copy;
-}
-let anim_active = false;
 function animate(elem) {
-    if(anim_active) return;
-    elem.style.animation = "flash 0.5s";
-    anim_active = true;
-    elem.addEventListener("animationend", function () {
-        anim_active = false;
-        elem.style.animation = "";
-        elem.removeEventListener("animationend", this);
+    elem.animate([
+        {filter: "brightness(100%)", offset: 0},
+        {filter: "brightness(1000%)", offset: 0.5},
+        {filter: "brightness(100%)", offset: 1},
+    ], {
+        duration: 1000 / 2,
+        iterations: 1,
+        easing: "ease-in-out",
     });
 }
-function photo() {
-    if(anim_active) return;
-    let copy = snapshot();
-    gallery.appendChild(copy);
-    animate(container);
+function snapshot(){
+    gallery.appendChild(vizor.cloneNode(true));
 }
 document.body.addEventListener("keydown", function (event) {
     console.log(event.key);
@@ -63,16 +80,23 @@ document.body.addEventListener("keydown", function (event) {
             im_s -= ds;
             break;
         case "s":
-            photo();
+            animate(container);
+            snapshot();
             break;
         case "t":
-            setTimeout(function () {
-                photo();
-            }, 500);
+            start_timer(5000, () => {
+                animate(container);
+                snapshot();
+            });
             break;
         case "b":
- //           let count = 4;
-//            container.addEventListener("animationend", function () {
+            let count = 4;
+            start_timer(500, () => {
+                animate(container);
+                snapshot();
+                count--;
+                return count > 0;
+            });
     }
     updateImage();
 });
