@@ -1,5 +1,6 @@
 let container = document.getElementById("container");
 let table = document.createElement("table");
+let colorPicker = document.getElementById("color");
 container.append(table);
 function saveColors() {
     let colors = {};
@@ -166,6 +167,15 @@ function shiftRow(row, pos) {
         row_.lastChild.before(row_.firstChild);
         pos--;
     }
+    for(let i = 0;i<row_.children.length;i++) {
+        for(let cls of row_.children[i].classList) {
+            if(cls.startsWith("c")) {
+                row_.children[i].classList.remove(cls);
+                row_.children[i].classList.add(`c${i}`);
+                break;
+            }
+        }
+    }
 }
 
 function jumble() {
@@ -182,7 +192,13 @@ function swap(el1, el2) {
 function transpose() {
     for(let row = 0;row<table.rows.length;row++) {
         for(let col = row;col<Math.min(table.rows.length, table.rows[row].cells.length);col++) {
-            swap(getNthChild(table, row).children[col], getNthChild(table, col).children[row]);
+            let ch1 = getNthChild(table, row).children[col];
+            let ch2 = getNthChild(table, col).children[row];
+            swap(ch1, ch2);
+            let cls1 = ch1.className;
+            let cls2 = ch2.className;
+            ch1.className = cls2;
+            ch2.className = cls1;
         }
     }
 }
@@ -225,3 +241,26 @@ drawRect(0, 0, 5, 2, 'black');
 drawLine(10, 5, 0, 5, 'gray');
 drawLine(10, 5, 10, 0, 'gray');
 smear(10, 5, 0.75);
+
+container.addEventListener('click', (e) => {
+    let classes = e.target.classList.toString();
+    if(!classes) return;
+    let row = parseInt(classes.match(/\d+/g)[0]);
+    let col = parseInt(classes.match(/\d+/g)[1]);
+    drawPixel(row, col, colorPicker.value);
+});
+
+document.getElementById("rainbow").addEventListener('click', () => {
+    rainbow('c');
+});
+
+document.getElementById("jumble").addEventListener('click', jumble);
+document.getElementById("rotate").addEventListener('click', transpose);
+document.getElementById("mirror").addEventListener('click', mirror);
+document.getElementById("clear").addEventListener('click', () => {
+    for(let i = 0;i<table.rows.length;i++) {
+        for(let j = 0;j<table.rows[i].cells.length;j++) {
+            drawPixel(i, j, 'white');
+        }
+    }
+});
