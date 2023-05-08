@@ -11,7 +11,25 @@ function start_timer(time_len, time_cb) {
     let time_span = document.createElement("span");
     time_span_parent.appendChild(time_span);
     let timer_start = (new Date()).getTime();
+    let ev;
+    let val = NaN;
+    if(time_len < 0) {
+        ev = (ev) => {
+            val = parseInt(ev.key);
+        }
+        document.body.addEventListener("keydown", ev);
+    }
     function update_timer() {
+        if(time_len < 0) {
+            if(isNaN(val)) {
+                time_span.innerText = "Type a number";
+                requestAnimationFrame(update_timer);
+                return;
+            }
+            time_len = val * 1000;
+            timer_start = (new Date()).getTime();
+            document.body.removeEventListener("keydown", ev);
+        }
         let c = (new Date()).getTime();
         if (c - timer_start > time_len) {
             if (time_cb()) {
@@ -24,7 +42,7 @@ function start_timer(time_len, time_cb) {
             time_cb = () => {
             };
         } else {
-            time_span.innerText = time_len - (c - timer_start);
+            time_span.innerText = String(time_len - (c - timer_start));
             requestAnimationFrame(update_timer);
         }
     }
@@ -84,7 +102,7 @@ document.body.addEventListener("keydown", function (event) {
             snapshot();
             break;
         case "t":
-            start_timer(5000, () => {
+            start_timer(-1, () => {
                 animate(container);
                 snapshot();
             });
@@ -98,5 +116,9 @@ document.body.addEventListener("keydown", function (event) {
                 return count > 0;
             });
     }
+    updateImage();
+});
+document.addEventListener("wheel", function (event) {
+    im_s += event.deltaY * ds;
     updateImage();
 });
