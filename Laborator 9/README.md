@@ -2,6 +2,10 @@
 
 *Folosiți notele de curs ca să vă amintiți conceptele de bază ale definirii formularelor din [cursul 9](https://cs.unibuc.ro/~cechirita/tw/c9) și rezolvați următoarele exerciții.*  
 
+## it's regex time!
+
+Vizitați [tutorialul](https://regexlearn.com ) de definire a expresiilor regulate în JavaScript. Vă va fi util în rezolvarea exercițiilor următoare pentru care trebuie să definiți pattern-uri de validare a conținutului câmpului unui formular. Nu trebuie să urmați tot tutorialul acum, dar e util să îl începeți și să reveniți la el când aveți nevoie să definiți expresii mai complexe.
+
 ## [space is the place!](https://www.youtube.com/watch?v=vHLOPBx2BaE)
 
 Descărcați fișierele `form.html`, `style.css` și `form.js` din directorul `resources`. Sarcina voastră principală este să modificați fișierele HTML și JavaScript pentru a crea un formular pentru cererea de intrare în Sistemul Solar a vietăților extraterestre. Folosiți imaginea `screenshot.png` din directorul `resources` pentru a vă ghida în scrierea formularului. 
