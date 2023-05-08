@@ -122,3 +122,24 @@ document.addEventListener("wheel", function (event) {
     im_s += event.deltaY * ds;
     updateImage();
 });
+let drag = false;
+let lastX = 0, lastY = 0;
+document.addEventListener('mousedown', (e) => {
+    drag = true;
+    lastX = e.clientX;
+    lastY = e.clientY;
+});
+document.addEventListener('mousemove', (e) => {
+    if (drag) {
+        if(!(e.buttons & 1)) {
+            drag = false;
+            return;
+        }
+        im_x += e.clientX - lastX;
+        im_y += e.clientY - lastY;
+        lastX = e.clientX;
+        lastY = e.clientY;
+        updateImage();
+    }
+});
+document.addEventListener('mouseup', () => drag = false);
