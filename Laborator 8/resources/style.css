@@ -1,0 +1,41 @@
+body {
+  background-color: black;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+
+.crop {
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  /* clip-path: circle(50%); */
+}
+
+.crop img {
+  margin: 0;
+}
+
+#gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+@keyframes flash {
+  0% {
+    filter: brightness(100%);
+  }
+  50% {
+    filter: brightness(1000%);
+  }
+  100% {
+    filter: brightness(100%);
+  }
+}
