@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <title>Formular pentru intrarea în Sistemul Solar</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script type="text/javascript" src="form.js" defer></script>
+  </head>
+  <body>
+    <h3>FORMULAR PENTRU INTRAREA ÎN SISTEMUL SOLAR</h3>
+    <div id="container">
+      <form method="post" action="Earth" id="input">
+        <fieldset>
+          <legend>Date personale</legend>
+          <p>
+            <label for="input-name">Nume complet:</label>
+            <input id="input-name" type="text" minlength="3" maxlength="30" required>
+          </p>
+          <p>
+            <label for="input-id">ID unic:</label>
+            <input id="input-id" type="text" minlength="8" maxlength="20" required pattern="[a-z0-9]{8,20}">
+          </p>
+          <p>
+            <label for="input-birthday">Data nașterii:</label>
+            <input id="input-birthday" type="date" min="1800-01-01" max="2023-05-07" required>
+          </p>
+          <p>
+            <label for="input-credit">Credit social acumulat:</label>
+            <input id="input-credit" type="range" min="0" max="2000" step="50" required>
+            <span id="input-credit-display"></span>
+          </p>
+          <p>
+            <label for="input-photo">Fotografie:</label>
+            <input id="input-photo" type="file">
+          </p>
+          <p>
+            <label for="input-species">Rasă:</label>
+            <select id="input-species" required>
+              <option value="" selected>--Please choose an option--</option>
+              <!-- Autobot, Daimons, Deep Ones, Experiment, Goa'uld, Hutt, Jawa, Kryptonian, Mandalorians, Martian, Protoss, Rodian, Romulan, Tleilaxu, Vogon, Wookie, Xenu, Yeti, Zerg -->
+              <option value="Autobot">Autobot</option>
+              <option value="Daimons">Daimons</option>
+              <option value="Deep Ones">Deep Ones</option>
+              <option value="Experiment">Experiment</option>
+              <option value="Goa'uld">Goa'uld</option>
+              <option value="Hutt">Hutt</option>
+              <option value="Jawa">Jawa</option>
+              <option value="Kryptonian">Kryptonian</option>
+              <option value="Mandalorians">Mandalorians</option>
+              <option value="Martian">Martian</option>
+              <option value="Protoss">Protoss</option>
+              <option value="Rodian">Rodian</option>
+              <option value="Romulan">Romulan</option>
+              <option value="Tleilaxu">Tleilaxu</option>
+              <option value="Vogon">Vogon</option>
+              <option value="Wookie">Wookie</option>
+              <option value="Xenu">Xenu</option>
+              <option value="Yeti">Yeti</option>
+              <option value="Zerg">Zerg</option>
+            </select>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Contact</legend>
+          <p>
+            <label for="input-galaxy">Galaxie proveniență:</label>
+            <input id="input-galaxy" type="text" required>
+          </p>
+          <p>
+            <label for="input-planet">Planetă proveniență:</label>
+            <input id="input-planet" type="text" required>
+          </p>
+          <p>
+            <label for="input-address">Adresă:</label>
+            <textarea id="input-address" required></textarea>
+          </p>
+          <p>
+            <label for="input-phone">Telefon:</label>
+            <input id="input-phone" type="text" required pattern="([0-9]{4}-){5}[0-9]{4}">
+          </p>
+          <p>
+            <label for="input-email">Email:</label>
+            <input id="input-email" type="email" required>
+          </p>
+          <p>
+            <label for="input-site">Personal website:</label>
+            <input id="input-site" type="url" placeholder="https://example.com" required>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Semnalmente fizice</legend>
+          <p>
+            <label for="input-height">Înălțime (10-300cm):</label>
+            <input id="input-height" type="number" min="1" max="500" required>
+          </p>
+          <p>
+            <label for="input-weight">Greutate (1-500kg):</label>
+            <input id="input-weight" type="number" min="1" max="500" required>
+          </p>
+          <p>
+            <label for="input-color">Culoare:</label>
+            <input id="input-color" type="color">
+          </p>
+        </fieldset>
+        <fieldset id="input-visit">
+          <legend>Vizită</legend>
+          <p>
+            <label for="input-arrival-date">Dată sosire:</label>
+            <input id="input-arrival-date" type="date" min="2023-05-07" max="2033-05-07" required>
+          </p>
+          <p>
+            <label for="input-arrival-time">Timp estimat sosire:</label>
+            <input id="input-arrival-time" type="time" required>
+          </p>
+          <p>
+            <span>Ședere:</span>
+            <input name="input-visit-type" id="input-visit-type-tmp" type="radio" checked required>
+            <label for="input-visit-type-tmp">Temporară</label>
+            <input name="input-visit-type" id="input-visit-type-perm" type="radio" checked required>
+            <label for="input-visit-type-perm">Permanentă</label>
+          </p>
+          <p>
+            <span>Scopul vizitei:</span>
+          </p>
+          <ul id="input-visit-purpose-ul">
+            <li>
+              <input name="input-visit-purpose" id="input-visit-purpose-business" type="checkbox">
+              <label for="input-visit-purpose-business">Afaceri</label>
+            </li>
+            <li>
+              <input name="input-visit-purpose" id="input-visit-purpose-tourism" type="checkbox">
+              <label for="input-visit-purpose-tourism">Turism</label>
+            </li>
+            <li>
+              <input name="input-visit-purpose" id="input-visit-purpose-social" type="checkbox">
+              <label for="input-visit-purpose-social">Social (familie & prieteni)</label>
+            </li>
+            <li>
+              <input name="input-visit-purpose" id="input-visit-purpose-invasion" type="checkbox" checked>
+              <label for="input-visit-purpose-invasion">Invazie</label>
+            </li>
+            <li>
+              <input name="input-visit-purpose" id="input-visit-purpose-other" type="checkbox">
+              <label for="input-visit-purpose-other">Altul</label>
+            </li>
+          </ul>
+          <p>
+            <label for="input-visit-details">Alte detalii:</label>
+            <br>
+            <textarea id="input-visit-details"></textarea>
+          </p>
+        </fieldset>
+        <input id="input-submit" type="submit" value="Trimite cerere">
+      </form>
+    </div>
+  </body>
+</html>

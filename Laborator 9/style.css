@@ -1,0 +1,51 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+*:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Fira Mono, monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #201B3C;
+}
+
+div {
+  margin: 12px;
+  padding: 10px;
+  width: 100%;
+  max-width: 600px;
+}
+
+input#input-phone {
+  width: 29ch;
+}
+
+fieldset {
+  margin-bottom: 20px;
+  padding: 1.5em;
+}
+
+textarea {
+  resize: none;
+  margin-top: 10px;
+  width: 30em;
+  height: 10em;
+}
+
+#input-visit-purpose-ul {
+  list-style: none;
+  margin-bottom: 5em;
+}
+
