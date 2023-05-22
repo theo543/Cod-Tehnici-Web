@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<movies>
+  <movie category="superhero-movie">
+    <title lang="en">Avengers: Endgame</title>
+    <director>Anthony Russo</director>
+    <director>Joe Russo</director>
+    <screenwriter>Christopher Markus</screenwriter>
+    <screenwriter>Stephen McFeely</screenwriter>
+    <producer>Kevin Feige</producer>
+    <actor type="principal">Benedict Cumberbatch</actor>
+    <year>2019</year>
+    <score>94%</score>
+  </movie>
+  <movie category="superhero-movie">
+    <title lang="en">Avengers: Infinity War</title>
+    <director>Anthony Russo</director>
+    <director>Joe Russo</director>
+    <screenwriter>Christopher Markus</screenwriter>
+    <screenwriter>Stephen McFeely</screenwriter>
+    <producer>Kevin Feige</producer>
+    <actor type="principal">Robert Downey Jr.</actor>
+    <year>2018</year>
+    <score>85%</score>
+  </movie>
+</movies>
