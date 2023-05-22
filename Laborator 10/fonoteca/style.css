@@ -7,13 +7,26 @@
 }
 
 #info {
-  /* ... */
+  flex: 1;
 }
 
 #gallery {
-  display: grid; 
-  /* ... */
+  display: grid;
+  flex: 1;
 }
 
+.album-cover {
+  text-align: center;
+  background-color: lightblue;
+  border-radius: 10px;
+  margin-bottom: 2em;
+}
 
+.album-cover .title .name {
+  font-weight: bold;
+}
 
+.album-cover .title {
+  margin: 1em;
+  overflow: auto;
+}
